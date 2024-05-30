@@ -1,0 +1,12 @@
+<h1>Items</h1>
+
+<div id="items">
+  <% @items.each do |item| %>
+    <%= render item %>
+    </br>
+    <p>
+      <%= link_to "Show this item", item, class: "btn btn-secondary" %>
+    </p>
+    <%= link_to "New item", new_item_path, class: "btn btn-success mt-3" %>
+  <% end %>
+</div>

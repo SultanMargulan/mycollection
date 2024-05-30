@@ -1,0 +1,25 @@
+<div id="<%= dom_id item %>" class="card">
+  <div class="card-body">
+    <h5 class="card-title"><strong><%= item.name %></strong></h5>
+
+    <div class="mb-3">
+      <strong>Description:</strong>
+      <%= item.description %>
+    </div>
+
+    <div class="mb-3">
+      <strong>Image URL:</strong>
+      <%= item.image_url %>
+    </div>
+
+    <div class="mb-3">
+      <strong>Tags:</strong>
+      <%= item.tags %>
+    </div>
+
+    <div class="mb-3">
+      <strong>Collection:</strong>
+      <%= item.collection.name %>
+    </div>
+  </div>
+</div>
